@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" href="Animate/animate.min.css">
+<script type="text/javascript">
+	
+</script>
+<style type="text/css">
+	html{
+		font-size: 62.5%;
+		overflow-x: ;: hidden;
+	}
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	a{
+		text-decoration:none;
+	}
+	body{
+		font-family: sans-serif;
+	}
+	ul{
+		list-style: none;
+	}
+	#firPage{
+		width:100%;
+		position: relative;
+	}
+	#firPage p{
+		width:80%;
+		height:7rem;
+		color:#fff;
+		font-size: 6rem;
+		position: absolute;
+		left:10%;
+		top:15rem;
+		text-align: center;
+	}
+	#firPage .der{
+		width:1200px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	}
+	#firPage .der img{
+		width: 3rem;
+		position: absolute;
+		bottom: 0;
+	}
+	#firPage .der img:hover{
+		cursor: pointer;
+	}
+	#secPage{
+		width: 100%
+		position:relative;
+	}
+	#secPage_1{
+		width: 1200px;
+		margin: 0 auto;
+		position: relative;
+	}
+	#secPage nav{
+		width: 100%;
+		height:4.6rem;
+		background:#42474B;
+		position: absolute;
+		color:#fff;
+		font-size: 1.4rem;
+	}
+	#nav_p{
+		width:1200px;
+		margin: 0 auto;
+		height:4.6rem;
+	}
+	.nav_img img{
+		width:4rem;
+		height:4rem;
+		border-radius: 4rem;
+		padding-top: 0.3rem
+	}
+	#nav_p div{
+		height:4.6rem;
+		line-height: 4.6rem;
+		float: left;
+		width: 10rem;
+		text-align: left;
+	}
+	#nav_p ul{
+		height:4.6rem;
+		float:right;
+		width:50%;
+	}
+	#nav_p ul li{
+		height:46px;
+		display: inline-block;
+		line-height: 46px;
+		width:18%;
+		text-align:right;
+	}
+	#nav_p ul li a{
+		text-decoration: none;
+		color:#fff;
+	}
+	.me_img{
+		width:100%;
+		/*text-align: center;*/
+		position: relative;
+		height: 200px;
+	}
+	.me_img img{
+		width:180px;
+		height:180px;
+		border-radius:180px;
+		position: absolute;
+		/*margin: 0;*/
+		left: 550px;
+		top:90px;
+	}
+	canvas{
+		position: absolute;
+		top:40px;
+		left:500px;
+	}
+	.jian{
+		width:1200px;
+		font-size: 1.6rem;
+		color:#fff;
+		margin: 0 auto;
+		margin-top:11rem;
+	}
+	.left{
+		float: left;
+		width: 50%;
+		height:auto;
+		/*border:1px solid red;*/
+	}
+	.left li{
+		width:100%;
+		height:2.5rem;
+
+	}
+	.left_1{
+		width:45%;
+		float: left;
+		height:2.1rem;
+		padding-right: 1%;
+		text-align: right;
+		border-right: 1px solid #fff;
+	}
+	.right_1{
+		width:45%;
+		float: left;
+		height:2.1rem;
+		padding-left: 1%;
+		text-align: left;
+		border-left: 1px solid #fff;
+	}
+	.right{
+		float: right;
+		width:40%;
+		padding-right: 10%;
+	}
+	.right li{
+		width:100%;
+	}
+	.page1{
+		width:1200px;
+		margin: 0 auto;
+	}
+	.page1 p{
+		width: 100%;
+		text-align: center;
+		padding-top: 10rem;
+		color: #fff;
+		font-size: 4rem
+	}
+	.dl_page{
+		width: 90%;
+		padding-left: 8%;
+		margin-top:7rem;
+	}
+	.page1 dl{
+		width: 20%;
+		float: left;
+		margin-left: 5%;
+		border: 1px solid #fff;
+		font-size: 1.6rem;
+	}
+	.page1 dl dt{
+		background: #fff;
+	}
+	.page1 dl dt,.page1 dl dd{
+		height: 3.2rem;
+		line-height: 3.2rem;
+		text-align: center;
+	}
+	.page1 dl dd{
+		color:#fff;
+		font-weight: bold;
+	}
+	.page1 dl dd:hover{
+		background: #fff;
+		color:#000;
+	}
+	.fourPage_1{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.fourPage_1 p{
+		width: 100%;
+		text-align: center;
+		padding-top: 10rem;
+		color: #fff;
+		font-size: 4rem	
+	}
+	.fourPage_1 div{
+		width:65%;
+		margin: 0 auto;
+		padding-left: 25%;
+		padding-top:7rem;
+	}
+	.fourPage_1 div dl{
+		float: left;
+		width:40%;
+		font-size: 2.6rem;
+		color: #fff;
+	}
+	.fourPage_1 div dl dt,.fourPage_1 div dl dd{
+		padding-bottom: 0.8rem;
+	}
+	.fourPage_1 div dl dt{
+		color: #eee;
+		font-size: 2.5rem;
+		padding-bottom: 1rem;
+	}
+	.fivePage1_1{
+		width: 1200px;
+		margin:0 auto;
+	}
+	.fivePage_1 p{
+		width: 100%;
+		text-align: center;
+		padding-top: 4rem;
+		color: #fff;
+		font-size: 4rem
+	}
+	.exp{
+		position: relative;
+		display: flex;
+		width: 90%;
+		margin-left: 6%;
+		margin-top:4%;
+		justify-content: space-around;
+	}
+	.exp li{
+		width:30%;
+		height:5rem; 
+		text-align: center;
+	}
+	.exp li img{
+		width:8rem;
+		border-radius: 8rem;
+		margin: 0 auto;
+		margin-top:2rem; 
+	}
+	.exp .bor{
+		width:12rem;
+		height:12rem;
+		border-radius: 12rem;
+		margin: 0 auto;
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+	}
+	.exp .bor img:hover{
+		transform: rotate(360deg);
+	}
+	.exp div{
+		color: #fff;
+		font-size: 1.8rem;
+		text-align: center;
+	}
+	.title{
+		padding:2rem 0;
+	}
+	.context,.title{
+		width: 60%;
+		margin: 0 auto;
+	}
+	.context{
+		text-align: left !important;
+		text-indent: 2.3rem;
+	}
+	#sixPage{
+		position: relative;
+	}
+	#sixPage .six_p{
+		color:#fff;
+		font-size:2.5rem;
+		width:1200px;
+		margin:0 auto;
+		padding-top: 20rem;
+	}
+	#sixPage .six_p1,#sixPage .six_p2{
+		width:100%;
+		height:5rem;
+		color:#fff;
+		font-size:2.5rem;
+		text-align:center;
+		line-height:5rem;
+	}
+</style>
+<link rel="stylesheet" href="firPage.css">
+<body>
+	<div id='firPage'>
+		<p>Hello World</p>
+		<div class="der"><img src="images/direction.png" alt="" class="animated pulse infinite"></div>
+	</div>
+	<div id='secPage'>
+		<nav>
+			<div id="nav_p">
+				<div class="nav_img"><img src="images/one.jpg"></div>
+				<ul>
+					<li><a href="#secPage">个人简介</a></li>
+					<li><a href="#thrPage">专业技能</a></li>
+					<li><a href="#fourPage">工作经历</a></li>
+					<li><a href="#fivePage">项目经验</a></li>
+					<li><a href="#sixPage">联系方式</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div id="secPage_1">
+			<div class="me_img"><canvas id="canvas"></canvas><img src="images/me.jpg"></div>
+			<div class="jian">
+				<ul class="left">
+					<li><div class="left_1">姓名</div><div class="right_1">彭涛奇</div></li>
+					<li><div class="left_1">手机号</div><div class="right_1">18670959615</div></li>
+					<li><div class="left_1">邮箱</div><div class="right_1">347586337@qq.com</div></li>
+					<li><div class="left_1">所在地</div><div class="right_1">北京</div></li>
+					<li><div class="left_1">github</div><div class="right_1"><a href="https://github.com/pengtaoqi/vue-music/tree/master" style="color:#fff;">点击进入</a></div></li>
+				</ul>
+				<ul class="right">
+					<li>我是一个性格幽默、做事认真的人。</li>
+					<li>我喜欢研究所碰到的各种技术，不给自己设边界，有 Geek 精神。</li>
+					<li>我有时间概念，能在约定时间内保证完成任务。</li>
+					<li>半年前端开发经验，熟悉 HTML、CSS、Javascript，能熟练开发符合 W3C 标准的页面，熟练使用 		jQuery 框架。
+					</li>
+					<li>有良好的编码习惯。</li>
+					<li>
+						有 node.js 基础，对服务器端开发有一定了解，能够配合程序员完成相关工作。
+						熟悉 PHP+MySQL；理解基本的算法分析与数据结构，以及面向对象的设计模式。
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="thrPage">
+		<div class="page1">
+			<p>专业技能</p>
+			<div class="dl_page">
+				<dl style="margin-left: 0">
+					<dt>语言</dt>
+					<dd>HTML(5)</dd>
+					<dd>CSS(3)</dd>
+					<dd>Javascript</dd>
+					<dd>PHP</dd>
+					<dd>SQL</dd>
+					<dd>node</dd>
+					<dd>ES6</dd>
+				</dl>
+				<dl>
+					<dt>思想</dt>
+					<dd>W3C标准</dd>
+					<dd>语义化</dd>
+					<dd>响应式设计</dd>
+					<dd>表现与结构分离</dd>
+				</dl>
+				<dl>
+					<dt>框架</dt>
+					<dd>jQuery</dd>
+					<dd>JQM</dd>
+					<dd>Mui</dd>
+					<dd>Vue</dd>
+				</dl>
+				<dl>
+					<dt>技术</dt>
+					<dd>Git</dd>
+					<dd>Ajax</dd>
+					<dd>webpack</dd>
+					<dd>node</dd>
+					<dd>github</dd>
+					<dd>canvas</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<div id="fourPage">
+		<div class="fourPage_1">
+			<p>工作经历</p>
+			<div>
+				<dl style="width:30%;padding-right: 1rem">
+					<dt>2013.09 - 2017.06</dt>
+					<dd style="font-weight: bold;">湖南工程学院</dd>
+					<dd style="font-size: 2rem">电子信息工程 专业</dd>
+				</dl>
+				<dl style="padding-left: 2rem;border-left: 2px solid #fff">
+					<dt>2016.06 - 2017.07</dt>
+					<dd style="font-weight: bold;">岁寒传媒公司</dd>
+					<dd style="font-size: 2rem">web前端开发工程师</dd>
+					<dd style="font-size: 1.7rem">app前端页面的设计，网页的交互设计，与设计团队讨论设计方案</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<div id="fivePage">
+		<div class="fivePage_1" style="padding-top:6rem">
+			<p>项目经验</p>
+			<ul class="exp">
+				<li>
+					<div class="bor" style="background: rgb(255,192,192);">
+						<img src="images/logo.png" style="background: rgb(255,192,192);">
+					</div>
+					<div class="title">声气</div>
+					<div class="context">一个集资讯，交友，活动于一体的app，是一个大型的单页面项目，和公司的另一位同事开发前端页面，完成设计交互任务
+					</div>
+				</li>
+				<li>
+					<div class="bor" style="background: rgb(120,200,100);">
+						<img src="images/wangyi.png" style="background:rgb(120,200,100);">
+					</div>
+					<div class="title">网易云音乐</div>
+					<div class="context">自己的独立项目，用vue框架仿网易云音乐，用json文件模仿后台数据交互，这个项目还在github上持续更新
+					</div>
+				</li>
+				<li>
+					<div class="bor" style="background: rgb(156,88,182);">
+						<img src="images/guomei.png" style="background: rgb(156,88,182);">
+					</div>
+					<div class="title">国美商城</div>
+					<div class="context">自己做一个国美商城的前端页面，原生js编写，实现旧版ie的兼容（不包括ie6）
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="sixPage" style="color: #fff;font-size: 2.5rem">
+		<p class="six_p" style="width:100px;margin:0 auto">
+			<div class="six_p1">快把我收到碗里吧</div>
+			<div class="six_p2">347586337@qq.com</div>
+		</p>
+	</div>
+	<div style="width: 100px"></div>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script>
+		var n=0
+		var pageWidth=document.documentElement.clientWidth;
+		var pageHeight=document.documentElement.clientHeight;
+		var canvas=document.getElementById('canvas');;
+		var context=canvas.getContext('2d');
+		var numAdd=Math.PI;
+		var num=360;
+		var r=20;
+		var i=0;
+		var add=numAdd/num
+			canvas.width=500;
+			canvas.height=500;
+			setInterval(function(){
+				context.clearRect(0,0,500,500);
+				i+=add;
+				drawCir1(numAdd+i,"责任");
+				drawCir1(numAdd/2+i,"情怀");
+				drawCir1(numAdd/0.5+i,"谦逊");
+				drawCir1(numAdd/0.66+i,"感恩");
+			},30);
+			function drawCir1(numAdd1,text){
+				// context.beginPath();
+				// context.strokeStyle="red";
+				// context.arc(140,140,90,0,2*Math.PI);
+				// context.stroke();
+				context.beginPath();
+				context.font="14px Arial";
+				// context.fillStyle="#fff";
+				context.fillText(text,110*Math.sin(numAdd1)+126,110*Math.cos(numAdd1)+145);
+				// context.strokeStyle="green";
+				// context.fillStyle="green";
+				context.arc(110*Math.sin(numAdd1)+140,110*Math.cos(numAdd1)+140,20,0,2*Math.PI);
+				context.stroke();
+				// context.fill();
+			}
+		$(function(){
+			$('.nav_img img').hover(function(){
+				$(this).attr('src','images/me.jpg');
+			},
+			function(){
+				$(this).attr('src','images/one.jpg');
+			});
+			$('#firPage').css('height',pageHeight+'px').css('background','#22B573');
+			$('#secPage').css('height',pageHeight+'px').css('background','#1889c5');
+			$('#thrPage').css('height',pageHeight+'px').css('background','#9C58B6');
+			$('#fourPage').css('height',pageHeight+'px').css('background','#26B1B6');
+			$('#fivePage').css('height',pageHeight+'px').css('background','#129DE7');
+			$('#sixPage').css('height',pageHeight+'px').css('background','red');
+			$('#firPage p').addClass('animated bounceInLeft');
+			$(".der img").on('click',function(){
+				var times=setInterval(function(){
+					$(document).scrollTop(n);
+					if(n==pageHeight || n>=pageHeight){
+						clearInterval(times);
+					}
+					n+=10;
+				},1);	
+			})
+			$(document).on('scroll',function(){
+				if($(document).scrollTop()>=pageHeight){
+					$('nav').css({
+						position:'fixed',
+						top:0,
+						'z-index':9999
+					});
+				}else{
+					$('nav').css({
+						position:'static'
+					});
+				}
+			})
+		})
+	</script>
+</body>
+</html>
