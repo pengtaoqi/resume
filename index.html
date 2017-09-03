@@ -3,15 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+    <meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1; user-scalable=no;">
 </head>
 <link rel="stylesheet" href="Animate/animate.min.css">
 <script type="text/javascript">
-	
+	(function (doc, win) { var docEl = doc.documentElement, resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize', recalc = function () { var clientWidth = docEl.clientWidth; if (!clientWidth) return; if(clientWidth>=640){ docEl.style.fontSize = '100px'; }else{ docEl.style.fontSize = 100 * (clientWidth / 640) + 'px'; } }; if (!doc.addEventListener) return; win.addEventListener(resizeEvt, recalc, false); doc.addEventListener('DOMContentLoaded', recalc, false); })(document, window);
 </script>
 <style type="text/css">
 	html{
-		font-size: 62.5%;
-		overflow-x: ;: hidden;
+		font-size: 100px;
+		font-family: Helvetica, Tahoma, Arial, "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+	}
+	a{
+		text-decoration: none;
+		color: #000;
 	}
 	*{
 		margin: 0;
@@ -32,22 +37,22 @@
 	}
 	#firPage p{
 		width:80%;
-		height:7rem;
+		height:0.7rem;
 		color:#fff;
-		font-size: 6rem;
+		font-size: 0.6rem;
 		position: absolute;
 		left:10%;
-		top:15rem;
+		top:1.5rem;
 		text-align: center;
 	}
 	#firPage .der{
-		width:1200px;
+		width:95%;
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
 	}
 	#firPage .der img{
-		width: 3rem;
+		width: 0.3rem;
 		position: absolute;
 		bottom: 0;
 	}
@@ -59,38 +64,38 @@
 		position:relative;
 	}
 	#secPage_1{
-		width: 1200px;
+		width: 95%;
 		margin: 0 auto;
 		position: relative;
 	}
 	#secPage nav{
 		width: 100%;
-		height:4.6rem;
+		height:0.46rem;
 		background:#42474B;
 		position: absolute;
 		color:#fff;
-		font-size: 1.4rem;
+		font-size: 0.14rem;
 	}
 	#nav_p{
-		width:1200px;
+		width:95%;
 		margin: 0 auto;
-		height:4.6rem;
+		height:0.46rem;
 	}
 	.nav_img img{
-		width:4rem;
-		height:4rem;
-		border-radius: 4rem;
-		padding-top: 0.3rem
+		width:0.4rem;
+		height:0.4rem;
+		border-radius: 0.4rem;
+		padding-top: 0.03rem
 	}
 	#nav_p div{
-		height:4.6rem;
-		line-height: 4.6rem;
+		height:0.46rem;
+		line-height: 0.46rem;
 		float: left;
-		width: 10rem;
+		width: 0.1rem;
 		text-align: left;
 	}
 	#nav_p ul{
-		height:4.6rem;
+		height:0.46rem;
 		float:right;
 		width:50%;
 	}
@@ -112,41 +117,39 @@
 		height: 200px;
 	}
 	.me_img img{
-		width:180px;
-		height:180px;
-		border-radius:180px;
+		width:1.8rem;
+		height:1.8rem;
+		border-radius:1.8rem;
 		position: absolute;
 		/*margin: 0;*/
-		left: 550px;
-		top:90px;
-	}
-	canvas{
-		position: absolute;
-		top:40px;
-		left:500px;
+		left: 45%;
+		top:0.9rem;
 	}
 	.jian{
-		width:1200px;
-		font-size: 1.6rem;
+		width:95%;
+		font-size: 0.16rem;
 		color:#fff;
 		margin: 0 auto;
-		margin-top:11rem;
+		margin-top:1.1rem;
+		float: left;
 	}
 	.left{
 		float: left;
-		width: 50%;
+		width: 30%;
+		padding-left: 20%;
 		height:auto;
+		/*padding-left: 10%;*/
 		/*border:1px solid red;*/
 	}
 	.left li{
 		width:100%;
-		height:2.5rem;
+		height:0.25rem;
 
 	}
 	.left_1{
 		width:45%;
 		float: left;
-		height:2.1rem;
+		height:0.21rem;
 		padding-right: 1%;
 		text-align: right;
 		border-right: 1px solid #fff;
@@ -154,7 +157,7 @@
 	.right_1{
 		width:45%;
 		float: left;
-		height:2.1rem;
+		height:0.21rem;
 		padding-left: 1%;
 		text-align: left;
 		border-left: 1px solid #fff;
@@ -162,40 +165,41 @@
 	.right{
 		float: right;
 		width:40%;
-		padding-right: 10%;
+		height: auto
+		/*padding-right: 0%;*/
 	}
 	.right li{
 		width:100%;
 	}
 	.page1{
-		width:1200px;
+		width:95%px;
 		margin: 0 auto;
 	}
 	.page1 p{
 		width: 100%;
 		text-align: center;
-		padding-top: 10rem;
+		padding-top: 1rem;
 		color: #fff;
-		font-size: 4rem
+		font-size:0.4rem
 	}
 	.dl_page{
 		width: 90%;
 		padding-left: 8%;
-		margin-top:7rem;
+		margin-top:0.7rem;
 	}
 	.page1 dl{
 		width: 20%;
 		float: left;
 		margin-left: 5%;
 		border: 1px solid #fff;
-		font-size: 1.6rem;
+		font-size: 0.16rem;
 	}
 	.page1 dl dt{
 		background: #fff;
 	}
 	.page1 dl dt,.page1 dl dd{
-		height: 3.2rem;
-		line-height: 3.2rem;
+		height: 0.32rem;
+		line-height: 0.32rem;
 		text-align: center;
 	}
 	.page1 dl dd{
@@ -207,46 +211,46 @@
 		color:#000;
 	}
 	.fourPage_1{
-		width: 1200px;
+		width: 95%;
 		margin: 0 auto;
 	}
 	.fourPage_1 p{
 		width: 100%;
 		text-align: center;
-		padding-top: 10rem;
+		padding-top: 1rem;
 		color: #fff;
-		font-size: 4rem	
+		font-size: 0.4rem	
 	}
 	.fourPage_1 div{
 		width:65%;
 		margin: 0 auto;
 		padding-left: 25%;
-		padding-top:7rem;
+		padding-top:0.7rem;
 	}
 	.fourPage_1 div dl{
 		float: left;
 		width:40%;
-		font-size: 2.6rem;
+		font-size: 0.26rem;
 		color: #fff;
 	}
 	.fourPage_1 div dl dt,.fourPage_1 div dl dd{
-		padding-bottom: 0.8rem;
+		padding-bottom: 0.08rem;
 	}
 	.fourPage_1 div dl dt{
 		color: #eee;
-		font-size: 2.5rem;
-		padding-bottom: 1rem;
+		font-size: 0.25rem;
+		padding-bottom: 0.1rem;
 	}
 	.fivePage1_1{
-		width: 1200px;
+		width: 95%;
 		margin:0 auto;
 	}
 	.fivePage_1 p{
 		width: 100%;
 		text-align: center;
-		padding-top: 4rem;
+		padding-top: 0.4rem;
 		color: #fff;
-		font-size: 4rem
+		font-size: 0.4rem
 	}
 	.exp{
 		position: relative;
@@ -258,19 +262,19 @@
 	}
 	.exp li{
 		width:30%;
-		height:5rem; 
+		height:0.5rem; 
 		text-align: center;
 	}
 	.exp li img{
-		width:8rem;
-		border-radius: 8rem;
+		width:0.8rem;
+		border-radius: 0.8rem;
 		margin: 0 auto;
-		margin-top:2rem; 
+		margin-top:0.2rem; 
 	}
 	.exp .bor{
-		width:12rem;
-		height:12rem;
-		border-radius: 12rem;
+		width:1.2rem;
+		height:1.2rem;
+		border-radius: 1.2rem;
 		margin: 0 auto;
 		transform: rotate(0deg);
 		-webkit-transform: rotate(0deg);
@@ -280,11 +284,14 @@
 	}
 	.exp div{
 		color: #fff;
-		font-size: 1.8rem;
+		font-size: 0.18rem;
 		text-align: center;
 	}
 	.title{
-		padding:2rem 0;
+		padding:0.2rem 0;
+	}
+	.nav-move{
+		display: none;
 	}
 	.context,.title{
 		width: 60%;
@@ -292,34 +299,63 @@
 	}
 	.context{
 		text-align: left !important;
-		text-indent: 2.3rem;
+		text-indent: 0.23rem;
 	}
 	#sixPage{
 		position: relative;
 	}
 	#sixPage .six_p{
 		color:#fff;
-		font-size:2.5rem;
-		width:1200px;
+		font-size:0.25rem;
+		width:95%;
 		margin:0 auto;
-		padding-top: 20rem;
+		padding-top: 2rem;
 	}
 	#sixPage .six_p1,#sixPage .six_p2{
 		width:100%;
-		height:5rem;
+		height:0.5rem;
 		color:#fff;
-		font-size:2.5rem;
+		font-size:0.25rem;
 		text-align:center;
-		line-height:5rem;
+		line-height:0.5rem;
+	}
+	#secPage_1_move{
+		display: none;
+	}
+	#mar{
+		margin-left: 0;
+	}
+	.fourPage_1_move{
+		display: none;
 	}
 </style>
 <link rel="stylesheet" href="firPage.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 <body>
 	<div id='firPage'>
 		<p>Hello World</p>
 		<div class="der"><img src="images/direction.png" alt="" class="animated pulse infinite"></div>
 	</div>
 	<div id='secPage'>
+		<div class="nav-move">
+				<div class="nav-input" id="ssw" style="background: #ccc">MUZU</div>
+				<ul id="nav-ul">
+					<li><a href="#secPage">个人简介</a></li>
+					<li><a href="#thrPage">专业技能</a></li>
+					<li><a href="#fourPage">工作经历</a></li>
+					<li><a href="#fivePage">项目经验</a></li>
+					<li><a href="#sixPage">联系方式</a></li>
+				</ul>
+				<div class="me_img_move" style="width: 1.5rem;height: 1.5rem;position: absolute;left:40%;top:2rem"><img src="images/me.jpg" style="max-width: 1.5rem;height:1.5rem;border-radius: 1.5rem;"></div>
+				<div style="color:#fff;font-size: 0.35rem;position: absolute;left:35%;top:3.8rem">有志者事竟成</div>
+				<dl style="color:#fff;font-size: 0.30rem;position: absolute;left:20%;top:4.5rem;">
+					<dt>姓名：彭涛奇</dt>
+					<dd>年龄：22</dd>
+					<dd>爱好：篮球，羽毛球，看书</dd>
+					<dd>联系电话：18670959615</dd>
+					<dd>座右铭：做最好的自己，给自己看</dd>
+				</dl>
+		</div>
 		<nav>
 			<div id="nav_p">
 				<div class="nav_img"><img src="images/one.jpg"></div>
@@ -332,8 +368,20 @@
 				</ul>
 			</div>
 		</nav>
+		<div id="secPage_1_move">
+			<ul class="right_move">
+					<li>我是一个性格幽默、做事认真的人。</li>
+					<li>有半年前端开发经验，熟悉 HTML、CSS、Javascript，能熟练开发符合 W3C 标准的页面，熟练使用 		jQuery 框架。
+					</li>
+					<li>有良好的编码习惯。</li>
+					<li>
+						有 node.js 基础，对服务器端开发有一定了解，能够配合程序员完成相关工作。
+						熟悉 PHP+MySQL；理解基本的算法分析与数据结构，以及面向对象的设计模式。
+					</li>
+				</ul>
+		</div>
 		<div id="secPage_1">
-			<div class="me_img"><canvas id="canvas"></canvas><img src="images/me.jpg"></div>
+			<div class="me_img"><img src="images/me.jpg"></div>
 			<div class="jian">
 				<ul class="left">
 					<li><div class="left_1">姓名</div><div class="right_1">彭涛奇</div></li>
@@ -362,7 +410,7 @@
 		<div class="page1">
 			<p>专业技能</p>
 			<div class="dl_page">
-				<dl style="margin-left: 0">
+				<dl id="mar">
 					<dt>语言</dt>
 					<dd>HTML(5)</dd>
 					<dd>CSS(3)</dd>
@@ -405,19 +453,30 @@
 				<dl style="width:30%;padding-right: 1rem">
 					<dt>2013.09 - 2017.06</dt>
 					<dd style="font-weight: bold;">湖南工程学院</dd>
-					<dd style="font-size: 2rem">电子信息工程 专业</dd>
+					<dd style="font-size: 0.2rem">电子信息工程 专业</dd>
 				</dl>
-				<dl style="padding-left: 2rem;border-left: 2px solid #fff">
+				<dl style="padding-left: 0.2rem;border-left: 2px solid #fff">
 					<dt>2016.06 - 2017.07</dt>
 					<dd style="font-weight: bold;">岁寒传媒公司</dd>
-					<dd style="font-size: 2rem">web前端开发工程师</dd>
-					<dd style="font-size: 1.7rem">app前端页面的设计，网页的交互设计，与设计团队讨论设计方案</dd>
+					<dd style="font-size: 0.2rem">web前端开发工程师</dd>
+					<dd style="font-size: 0.17rem">app前端页面的设计，网页的交互设计，与设计团队讨论设计方案</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="fourPage_1_move">
+			<p>工作经历</p>
+			<div class="move-four">
+				<dl>
+					<dt>时间：2016.06 - 2017.07</dt>
+					<dd>公司：岁寒传媒公司</dd>
+					<dd>岗位：web前端开发工程师</dd>
+					<dd style="font-size: 0.28rem">责任：app前端页面的设计，网页的交互设计，与设计团队讨论设计方案，将UI设计师的设计如实体现到产品前端页面中，完成浏览器端功能的开发，通过还原ui设计改善用户体验。负责部门公共Demo的开发及维护。负责制定Web前端标准及规范。</dd>
 				</dl>
 			</div>
 		</div>
 	</div>
 	<div id="fivePage">
-		<div class="fivePage_1" style="padding-top:6rem">
+		<div class="fivePage_1" style="padding-top:0.6rem">
 			<p>项目经验</p>
 			<ul class="exp">
 				<li>
@@ -447,51 +506,62 @@
 			</ul>
 		</div>
 	</div>
-	<div id="sixPage" style="color: #fff;font-size: 2.5rem">
-		<p class="six_p" style="width:100px;margin:0 auto">
+	<div id="sixPage" style="color: #fff;font-size: 0.25rem">
+		<p class="six_p" style="width:1rem;margin:0 auto">
 			<div class="six_p1">快把我收到碗里吧</div>
 			<div class="six_p2">347586337@qq.com</div>
 		</p>
 	</div>
-	<div style="width: 100px"></div>
+	<div style="width: 1rem"></div>
 	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 	<script>
 		var n=0
 		var pageWidth=document.documentElement.clientWidth;
 		var pageHeight=document.documentElement.clientHeight;
-		var canvas=document.getElementById('canvas');;
-		var context=canvas.getContext('2d');
-		var numAdd=Math.PI;
-		var num=360;
-		var r=20;
-		var i=0;
-		var add=numAdd/num
-			canvas.width=500;
-			canvas.height=500;
-			setInterval(function(){
-				context.clearRect(0,0,500,500);
-				i+=add;
-				drawCir1(numAdd+i,"责任");
-				drawCir1(numAdd/2+i,"情怀");
-				drawCir1(numAdd/0.5+i,"谦逊");
-				drawCir1(numAdd/0.66+i,"感恩");
-			},30);
-			function drawCir1(numAdd1,text){
-				// context.beginPath();
-				// context.strokeStyle="red";
-				// context.arc(140,140,90,0,2*Math.PI);
-				// context.stroke();
-				context.beginPath();
-				context.font="14px Arial";
-				// context.fillStyle="#fff";
-				context.fillText(text,110*Math.sin(numAdd1)+126,110*Math.cos(numAdd1)+145);
-				// context.strokeStyle="green";
-				// context.fillStyle="green";
-				context.arc(110*Math.sin(numAdd1)+140,110*Math.cos(numAdd1)+140,20,0,2*Math.PI);
-				context.stroke();
-				// context.fill();
-			}
+		// var canvas=document.getElementById('canvas');;
+		// var context=canvas.getContext('2d');
+		// var numAdd=Math.PI;
+		// var num=360;
+		// var r=20;
+		// var i=0;
+		// var add=numAdd/num
+		// 	canvas.width=500;
+		// 	canvas.height=500;
+		// 	setInterval(function(){
+		// 		context.clearRect(0,0,500,500);
+		// 		i+=add;
+		// 		drawCir1(numAdd+i,"责任");
+		// 		drawCir1(numAdd/2+i,"情怀");
+		// 		drawCir1(numAdd/0.5+i,"谦逊");
+		// 		drawCir1(numAdd/0.66+i,"感恩");
+		// 	},30);
+		// 	function drawCir1(numAdd1,text){
+		// 		// context.beginPath();
+		// 		// context.strokeStyle="red";
+		// 		// context.arc(140,140,90,0,2*Math.PI);
+		// 		// context.stroke();
+		// 		context.beginPath();
+		// 		context.font="14px Arial";
+		// 		// context.fillStyle="#fff";
+		// 		context.fillText(text,110*Math.sin(numAdd1)+126,110*Math.cos(numAdd1)+145);
+		// 		// context.strokeStyle="green";
+		// 		// context.fillStyle="green";
+		// 		context.arc(110*Math.sin(numAdd1)+140,110*Math.cos(numAdd1)+140,20,0,2*Math.PI);
+		// 		context.stroke();
+		// 		// context.fill();
+		// 	}
 		$(function(){
+			$("#ssw").on("click",function(){
+				if($("#nav-ul").css("display")=="none"){
+					$("#nav-ul").css("display","block");
+				}else{
+					$("#nav-ul").css("display","none");
+				}
+				
+			});
+			// $(window).on("click",function(){
+			// 	$("#nav-ul").css("display","none");
+			// });
 			$('.nav_img img').hover(function(){
 				$(this).attr('src','images/me.jpg');
 			},
@@ -526,7 +596,7 @@
 						position:'static'
 					});
 				}
-			})
+			});
 		})
 	</script>
 </body>
